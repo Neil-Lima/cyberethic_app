@@ -6,7 +6,7 @@ import { faStar, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 function NavCyberthic() {
   return (
     <>
-      <Navbar expand="md" fixed="top" className="py-3" style={{ background: '#001f4d', color: 'white', padding: '0px' }}>
+      <Navbar expand="md" fixed="top" className="py-3" style={{ background: 'linear-gradient(to bottom right, #001f4d, #000000)', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)' , color: 'white', padding: '0px' }}>
         <Container>
           <Navbar.Brand href="#" className="d-flex align-items-center">
             <FontAwesomeIcon icon={faStar} style={{ color: 'white', marginRight: '10px' }} />

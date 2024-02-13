@@ -7,6 +7,11 @@ import CartaoDestaqueCyberethic from './components/CartaoDestaqueCyberethic'
 import ProjetosCyberethic from './components/ProjetosCyberethic'
 import StatsCyberethic from './components/StatsCyberethic'
 import SobreEmpresaCyberethic from './components/SobreEmpresaCyberethic'
+import TimeCyberethic from './components/TimeCyberethic'
+import ContatoCyberethic from './components/ContatoCyberethic'
+import FooterCyberethic from './components/FooterCyberethic'
+import ChatCyberethic from '../../components/ChatCyberethic'
+
 function Home() {
   return (
     <>
@@ -18,6 +23,10 @@ function Home() {
     <ProjetosCyberethic/>
     <StatsCyberethic/>
     <SobreEmpresaCyberethic/>
+    <TimeCyberethic/>
+    <ContatoCyberethic/>
+    <FooterCyberethic/>
+    
     </>
   )
 }
