@@ -11,18 +11,20 @@ import TimeCyberethic from './components/TimeCyberethic'
 import ContatoCyberethic from './components/ContatoCyberethic'
 import FooterCyberethic from './components/FooterCyberethic'
 import ChatCyberethic from '../../components/ChatCyberethic'
+import SlideCyberethic from './components/SlideCyberethic'
 
 function Home() {
   return (
     <>
     <HeroCyberethic/>
     <SobreCyberethic/>
-    <ParceirosCyberethic/>
+    <SlideCyberethic/><br />    
     <SolucoesCyberethic/>
     <CartaoDestaqueCyberethic/>
     <ProjetosCyberethic/>
     <StatsCyberethic/>
     <SobreEmpresaCyberethic/>
+    <ParceirosCyberethic/>
     <TimeCyberethic/>
     <ContatoCyberethic/>
     <FooterCyberethic/>
