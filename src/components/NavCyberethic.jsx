@@ -10,7 +10,7 @@ function NavCyberthic() {
         <Container>
           <Navbar.Brand href="#" className="d-flex align-items-center">
             <FontAwesomeIcon icon={faStar} style={{ color: 'white', marginRight: '10px' }} />
-            <span style={{ color: 'white' }}>empresa</span>
+            <span style={{ color: 'white' }}>CYBERETHIC</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navcol-2" />
           <Navbar.Collapse id="navcol-2" className="justify-content-end">
