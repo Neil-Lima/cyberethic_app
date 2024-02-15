@@ -20,14 +20,7 @@ function NavCyberthic() {
               <Nav.Link href="#" style={{ color: 'white' }}>Soluções</Nav.Link>
               <Nav.Link href="#" style={{ color: 'white' }}>Serviços</Nav.Link>
               <Nav.Link href="#" style={{ color: 'white' }}>Portfolio</Nav.Link>
-            </Nav>
-            <Form className="d-flex align-items-center">
-              <FontAwesomeIcon icon={faSun} style={{ marginRight: '6px', fontSize: '22px' }} />
-              <ButtonGroup toggle>
-                <ToggleButton type="checkbox" variant="light" />
-              </ButtonGroup>
-              <FontAwesomeIcon icon={faMoon} style={{ marginLeft: '6px', fontSize: '22px' }} />
-            </Form>
+            </Nav>           
           </Navbar.Collapse>
         </Container>
       </Navbar>
