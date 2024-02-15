@@ -5,6 +5,42 @@ import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free
 import Avatar from 'react-avatar';
 
 function TimeCyberethic() {
+  const equipe = [
+    {
+      nome: 'Kay Garland',
+      papel: 'Lead Designer',
+      imagemSrc: 'https://example.com/Kay.jpg',
+      redesSociais: [
+        { icone: faInstagram, link: 'https://www.instagram.com/kay_garland/' },
+        { icone: faFacebook, link: 'https://www.facebook.com/kay.garland/' },
+        { icone: faLinkedin, link: 'https://www.linkedin.com/in/kay-garland/' },
+        { icone: faGithub, link: 'https://github.com/kaygarland/' }
+      ]
+    },
+    {
+      nome: 'Larry Parker',
+      papel: 'Lead Marketer',
+      imagemSrc: 'https://example.com/Larry.jpg',
+      redesSociais: [
+        { icone: faInstagram, link: 'https://www.instagram.com/larry_parker/' },
+        { icone: faFacebook, link: 'https://www.facebook.com/larry.parker/' },
+        { icone: faLinkedin, link: 'https://www.linkedin.com/in/larry-parker/' },
+        { icone: faGithub, link: 'https://github.com/larryparker/' }
+      ]
+    },
+    {
+      nome: 'Diana Pertersen',
+      papel: 'Lead Developer',
+      imagemSrc: 'https://example.com/Diana.jpg',
+      redesSociais: [
+        { icone: faInstagram, link: 'https://www.instagram.com/diana_pertersen/' },
+        { icone: faFacebook, link: 'https://www.facebook.com/diana.pertersen/' },
+        { icone: faLinkedin, link: 'https://www.linkedin.com/in/diana-pertersen/' },
+        { icone: faGithub, link: 'https://github.com/dianapertersen/' }
+      ]
+    }
+  ];
+
   return (
     <section id="team" className="bg-light-gray" style={{ padding: '40px' }}>
       <Container>
@@ -14,63 +50,28 @@ function TimeCyberethic() {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col sm={4} className="text-center">
-            <div className="team-member">
-              <Avatar
-                name="Kay Garland"
-                size="150"
-                round={true}
-                style={{ margin: '0 auto 10px' }}
-                src="https://example.com/Kay.jpg" // Substitua pelo URL da imagem de Kay Garland
-              />
-              <h4>Kay Garland</h4>
-              <p className="text-muted">Lead Designer</p>
-              <div style={{ padding: '0px', textAlign: 'center' }}>
-                <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faFacebook} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faGithub} style={{ fontSize: '20px', marginRight: '10px' }} />
+          {equipe.map((membro, index) => (
+            <Col key={index} sm={4} className="text-center">
+              <div className="team-member">
+                <Avatar
+                  name={membro.nome}
+                  size="150"
+                  round={true}
+                  style={{ margin: '0 auto 10px' }}
+                  src={membro.imagemSrc}
+                />
+                <h4>{membro.nome}</h4>
+                <p className="text-muted">{membro.papel}</p>
+                <div style={{ padding: '0px', textAlign: 'center' }}>
+                  {membro.redesSociais.map((redeSocial, index) => (
+                    <a key={index} href={redeSocial.link} target="_blank" rel="noopener noreferrer">
+                      <FontAwesomeIcon icon={redeSocial.icone} style={{ fontSize: '20px', marginRight: '10px' }} />
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col sm={4} className="text-center">
-            <div className="team-member">
-              <Avatar
-                name="Larry Parker"
-                size="150"
-                round={true}
-                style={{ margin: '0 auto 10px' }}
-                src="https://example.com/Larry.jpg" // Substitua pelo URL da imagem de Larry Parker
-              />
-              <h4>Larry Parker</h4>
-              <p className="text-muted">Lead Marketer</p>
-              <div style={{ padding: '0px', textAlign: 'center' }}>
-                <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faFacebook} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faGithub} style={{ fontSize: '20px', marginRight: '10px' }} />
-              </div>
-            </div>
-          </Col>
-          <Col sm={4} className="text-center">
-            <div className="team-member">
-              <Avatar
-                name="Diana Pertersen"
-                size="150"
-                round={true}
-                style={{ margin: '0 auto 10px' }}
-                src="https://example.com/Diana.jpg" // Substitua pelo URL da imagem de Diana Pertersen
-              />
-              <h4>Diana Pertersen</h4>
-              <p className="text-muted">Lead Developer</p>
-              <div style={{ padding: '0px', textAlign: 'center' }}>
-                <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faFacebook} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '20px', marginRight: '10px' }} />
-                <FontAwesomeIcon icon={faGithub} style={{ fontSize: '20px', marginRight: '10px' }} />
-              </div>
-            </div>
-          </Col>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>
