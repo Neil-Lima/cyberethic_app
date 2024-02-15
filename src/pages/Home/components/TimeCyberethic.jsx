@@ -7,7 +7,7 @@ import Avatar from 'react-avatar';
 function TimeCyberethic() {
   const equipe = [
     {
-      nome: 'Kay Garland',
+      nome: 'Bruno Vieira',
       papel: 'Lead Designer',
       imagemSrc: '../../../images/417418139_1389259675052675_4232505973142057501_n.jpg',
       redesSociais: [
