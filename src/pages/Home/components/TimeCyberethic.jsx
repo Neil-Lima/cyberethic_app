@@ -9,7 +9,7 @@ function TimeCyberethic() {
     {
       nome: 'Kay Garland',
       papel: 'Lead Designer',
-      imagemSrc: 'https://example.com/Kay.jpg',
+      imagemSrc: '../../../images/417418139_1389259675052675_4232505973142057501_n.jpg',
       redesSociais: [
         { icone: faInstagram, link: 'https://www.instagram.com/kay_garland/' },
         { icone: faFacebook, link: 'https://www.facebook.com/kay.garland/' },
