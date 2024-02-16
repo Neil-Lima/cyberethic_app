@@ -18,8 +18,7 @@ function SobreCyberethic() {
                   <div style={{ maxWidth: '350px' }}>
                     <h2 className="text-uppercase fw-bold">SOBRE NÓS</h2>
                     <p className="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p>
-                    <Button variant="primary" className="btn-lg me-2">Button</Button>
-                    <Button variant="outline-primary" className="btn-lg">Button</Button>
+                    <Button variant="primary" className="btn-lg me-2">Curriculo</Button>                    
                   </div>
                 </Col>
               </Row>
