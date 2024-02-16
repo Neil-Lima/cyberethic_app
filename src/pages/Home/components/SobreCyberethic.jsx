@@ -17,8 +17,8 @@ function SobreCyberethic() {
                 <Col md={6} className="d-md-flex align-items-md-center">
                   <div style={{ maxWidth: '350px' }}>
                     <h2 className="text-uppercase fw-bold">SOBRE NÓS</h2>
-                    <p className="my-3">Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien, risus donec ad fusce augue interdum.</p>
-                    <Button variant="primary" className="btn-lg me-2">Curriculo</Button>                    
+                    <p className="my-3">Na CyberEthic, estamos comprometidos em desenvolver soluções digitais inovadoras que impulsionam seu negócio para o sucesso. Combinamos tecnologia de ponta com uma abordagem ética para criar sistemas e sites que não apenas atendem às suas necessidades, mas também elevam a experiência do usuário a um novo patamar. Nossa paixão pela excelência nos impulsiona a superar expectativas e entregar resultados excepcionais. Junte-se a nós enquanto exploramos o futuro digital juntos.</p>
+                    <Button variant="primary" className="btn-lg me-2">Currículo</Button>                    
                   </div>
                 </Col>
               </Row>
