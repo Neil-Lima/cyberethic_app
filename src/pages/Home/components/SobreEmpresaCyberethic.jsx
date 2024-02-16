@@ -6,7 +6,7 @@ import aboutImage from '../../../images/about.jpg';
 function SobreEmpresaCyberethic() {
   return (
     <>
-      <div className="card" style={{ background: "rgba(255,255,255,0)" }}>
+      <div className="card" style={{ background: "rgba(255,255,255,0)" }} data-aos="fade-left" >
         <div className="card-body">
           <Container style={{ marginTop: "100px" }}>
             <Row>

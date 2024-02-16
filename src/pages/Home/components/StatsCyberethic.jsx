@@ -14,7 +14,7 @@ function StatsCyberethic() {
 
   return (
     <>
-    <Container>
+    <Container data-aos="fade-right" >
       <Card style={{background: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpapers.com/images/hd/mirrored-skyscrapers-in-low-angle-xn331vsegdl9vss1.jpg') center / cover no-repeat fixed"}}>
         <Card.Body style={{background: "rgba(13,110,253,0.31)", color: "white"}}>
           <Container className="py-4 py-xl-5">

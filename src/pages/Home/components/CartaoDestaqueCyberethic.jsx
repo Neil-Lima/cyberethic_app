@@ -25,7 +25,7 @@ function CartaoDestaqueCyberethic() {
   ];
 
   return (
-    <Container className="py-4 py-xl-5">
+    <Container className="py-4 py-xl-5"  data-aos="fade-right" >
       <Row className="row-cols-1 row-cols-md-2">
         <Col>
           <img className="rounded w-100 h-100 fit-cover" style={{ minHeight: '300px' }} src={Destaque} alt="Imagem de Destaque" />

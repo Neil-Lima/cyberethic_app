@@ -7,7 +7,7 @@ import { faFacebook, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-b
 function FooterCyberethic() {
   return (
     <>
-      <footer style={{ background: 'linear-gradient(to bottom right, #001f4d, #000000)', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)', marginBottom: '-177px', padding: '15px' }}>
+      <footer data-aos="fade-left" style={{ background: 'linear-gradient(to bottom right, #001f4d, #000000)', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)', marginBottom: '-177px', padding: '15px' }}>
         <Container>
           <Row>
             <Col sm={6} md={4} className="footer-navigation">

@@ -44,7 +44,7 @@ const teamMembers = [
 
 const TimeCyberethic = () => {
   return (
-    <section id="team" className="bg-light-gray" style={{ padding: '40px' }}>
+    <section id="team" className="bg-light-gray" style={{ padding: '40px' }} data-aos="fade-left">
       <Container>
         <Row>
           <Col lg={12} className="text-center">

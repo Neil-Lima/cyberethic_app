@@ -26,7 +26,7 @@ function SlideCyberethic() {
   };
 
   return (
-    <Container fluid className="p-0">
+    <Container fluid className="p-0" data-aos="fade-right" >
       <Carousel interval={6000} fade>
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>

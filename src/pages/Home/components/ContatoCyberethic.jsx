@@ -7,7 +7,7 @@ function ContatoCyberethic() {
   return (
     <>
 
-      <section className="position-relative py-4 py-xl-5" style={{ marginTop: '30px', background: `url('https://wallpapers.com/images/hd/dark-aesthetic-world-map-w1svazb2ay69orbw.jpg') center / cover no-repeat`, backgroundAttachment: 'fixed', color: 'var(--bs-white)', marginBottom: '0px' }}>
+      <section className="position-relative py-4 py-xl-5" style={{ marginTop: '30px', background: `url('https://wallpapers.com/images/hd/dark-aesthetic-world-map-w1svazb2ay69orbw.jpg') center / cover no-repeat`, backgroundAttachment: 'fixed', color: 'var(--bs-white)', marginBottom: '0px' }} data-aos="fade-right">
 
         <Container className="position-relative" style={{ background: 'rgba(52,58,64,0.72)' }}>
           <Row className="mb-5">

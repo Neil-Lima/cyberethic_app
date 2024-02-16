@@ -4,7 +4,7 @@ import { Card, Container, Row, Col, Button } from "react-bootstrap";
 function SobreCyberethic() {
   return (
     <>
-      <div>
+      <div  data-aos="fade-left" >
         <Card
           className="card"
           style={{

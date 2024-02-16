@@ -43,7 +43,7 @@ function SolucoesCyberethic() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <Container className="py-4 py-xl-5">
+    <Container className="py-4 py-xl-5" data-aos="fade-left" >
       <Row className="mb-5">
         <Col md={8} xl={6} className="text-center mx-auto">
           <h2>Soluções</h2>

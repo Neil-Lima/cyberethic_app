@@ -19,7 +19,7 @@ function ParceirosCyberethic() {
 
   return (
     <>
-      <Container>
+      <Container data-aos="fade-right">
         <Row>
           <Col>
             <h2 className="text-center mb-4">Nossos Parceiros</h2>
