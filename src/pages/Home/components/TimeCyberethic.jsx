@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import Avatar from 'react-avatar';
 
 function TimeCyberethic() {
   const equipe = [
@@ -53,12 +52,10 @@ function TimeCyberethic() {
           {equipe.map((membro, index) => (
             <Col key={index} sm={4} className="text-center">
               <div className="team-member">
-                <Avatar
-                  name={membro.nome}
-                  size="150"
-                  round={true}
-                  style={{ margin: '0 auto 10px' }}
+                <Image
                   src={membro.imagemSrc}
+                  roundedCircle
+                  style={{ margin: '0 auto 10px', width: '150px', height: '150px' }}
                 />
                 <h4>{membro.nome}</h4>
                 <p className="text-muted">{membro.papel}</p>
