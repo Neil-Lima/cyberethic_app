@@ -11,8 +11,8 @@ function HeroCyberethic() {
             <Container className="mt-5">
               <Row>
                 <Col md={6}>
-                  <h1 style={{ fontSize: '52.36px', fontWeight: '900', marginTop: '58px', color: 'white' }}>Integrate your stack -&gt;automate your work</h1>
-                  <p style={{ fontWeight: 'bold', fontSize: '18px', marginTop: '12px', color: 'white' }}>Evolve at speed and scale of your business with the leader in low-code automation</p>
+                  <h1 style={{ fontSize: '52.36px', fontWeight: '900', marginTop: '58px', color: 'white' }}>Transformando Ideias em Realidade Digital com CyberEthic</h1>
+                  <p style={{ fontWeight: 'bold', fontSize: '18px', marginTop: '12px', color: 'white' }}>Bem-vindo ao universo da CyberEthic, onde a inovação ganha vida. Somos uma equipe dedicada de especialistas em software, apaixonados por transformar suas ideias em soluções digitais de alto desempenho. Desde sistemas personalizados até websites dinâmicos, estamos aqui para impulsionar sua visão para o futuro digital. Descubra o poder da tecnologia aliada à ética em cada linha de código que escrevemos. Vamos moldar juntos o amanhã digital</p>
                 </Col>
                 <Col md={6} lg={6} className="offset-lg-0"><img src={HeroHome} alt="home-font" style={{ width: '447px' }} /></Col>
               </Row>
