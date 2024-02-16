@@ -4,13 +4,13 @@ import { Carousel, Container, Row, Col } from 'react-bootstrap';
 const slides = [
   {
     image: 'https://srconsultoriafinanceira.com.br/wp-content/uploads/2016/06/sr-consultoria-financeira-imagem-001.jpg',
-    title: 'SOMOS A Viana Consultoria',
+    title: 'SOMOS A Cyberethic Consultoria',
     description: 'Consultoria - Especialistas em soluções de TI, Treinamentos e Outsourcing. Auxiliamos a sua empresa a tomar decisões em TI, análise de tecnologias e levantamento de requisitos.'
   },
   {
     image: 'https://blog.eseg.edu.br/wp-content/uploads/2021/12/como-e-trabalhar-com-programacao.png',
     title: 'ESPECIALISTAS EM Desenvolvimento de Software',
-    description: 'Possuímos profissionais com ótimo perfil técnico e adequados ao projeto do cliente, seja alocados na equipe do cliente ou em projetos com a gestão da Viana Consultoria.'
+    description: 'Possuímos profissionais com ótimo perfil técnico e adequados ao projeto do cliente, seja alocados na equipe do cliente ou em projetos com a gestão da Cyberethic Consultoria.'
   },
  
 ];

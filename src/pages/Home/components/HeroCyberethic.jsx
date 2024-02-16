@@ -6,7 +6,7 @@ function HeroCyberethic() {
   return (
     <>
       <div>
-        <Card className="mt-0" style={{ border: 'none', backgroundColor: '#001f4d' }}>
+        <Card className="mt-0" style={{ border: 'none', backgroundColor: '#001f4d', marginTop:"50px" }}>
           <Card.Body style={{ background: 'rgba(40,100,188,0)', padding: '0px', border: 'none' }}>
             <Container className="mt-5">
               <Row>

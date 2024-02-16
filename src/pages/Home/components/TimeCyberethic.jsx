@@ -8,8 +8,8 @@ import image3 from '../../../images/426575990_1389329661712343_23214583578828241
 
 const teamMembers = [
   {
-    name: 'Kay Garland',
-    position: 'Lead Designer',
+    name: 'BRUNO VIEIRA',
+    position: ' C# | .NET | ASP.NET | Azure | Angular | CI/CD',
     imageSrc: image1,
     socialMedia: [
       { icon: faInstagram },
@@ -19,8 +19,8 @@ const teamMembers = [
     ]
   },
   {
-    name: 'Larry Parker',
-    position: 'Lead Marketer',
+    name: 'REINALDO VIANA',
+    position: 'Especialista FullStack Java | Go lang | AWS | Azure | Kubernetes | Kafka',
     imageSrc: image2,
     socialMedia: [
       { icon: faInstagram },
@@ -30,8 +30,8 @@ const teamMembers = [
     ]
   },
   {
-    name: 'Diana Pertersen',
-    position: 'Lead Developer',
+    name: 'ARLEY C. BRANCO',
+    position: 'Software Analyst Senior Java | Spring | AWS | Azure | C#',
     imageSrc: image3,
     socialMedia: [
       { icon: faInstagram },
@@ -48,16 +48,16 @@ const TimeCyberethic = () => {
       <Container>
         <Row>
           <Col lg={12} className="text-center">
-            <h2 className="section-heading">Time</h2>
+            <h2 className="section-heading">Time</h2><br/>
           </Col>
         </Row>
         <Row>
           {teamMembers.map((member, index) => (
             <Col sm={4} key={index} className="d-flex flex-column align-items-center">
               <div className="team-member text-center">
-                <img className="rounded-circle img-fluid" src={member.imageSrc} alt={member.name} style={{ width: '100px', height: '100px' }} />
+                <img className="rounded-circle img-fluid border border-info" src={member.imageSrc} alt={member.name} style={{ width: '250px', height: '250px' }} />
                 <h4>{member.name}</h4>
-                <p className="text-muted">{member.position}</p>
+                <p style={{color:"white"}}>{member.position}</p>
               </div>
               <div className="social-media-icons text-center">
                 {member.socialMedia.map((social, index) => (
@@ -71,5 +71,4 @@ const TimeCyberethic = () => {
     </section>
   );
 }
-
 export default TimeCyberethic;
