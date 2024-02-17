@@ -1,64 +1,77 @@
 import React, { useState } from 'react';
-import { Container, Button, Collapse } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { ThemeProvider } from 'styled-components';
+import { Container, Button, Row, Col } from 'react-bootstrap';
+import ChatBot from 'react-simple-chatbot';
 
-function ChatCyberethic() {
-  const [openChat, setOpenChat] = useState(false);
+const theme = {
+  background: '#f5f8fb',
+  fontFamily: 'Arial, Helvetica, sans-serif',
+  headerBgColor: '#4CAF50',
+  headerFontColor: '#fff',
+  headerFontSize: '15px',
+  botBubbleColor: '#4CAF50',
+  botFontColor: '#fff',
+  userBubbleColor: '#fff',
+  userFontColor: '#4a4a4a',
+};
 
-  const toggleChat = () => {
-    setOpenChat(!openChat);
+const ChatCyberethic = () => {
+  const [showChat, setShowChat] = useState(false);
+
+  const handleChatToggle = () => {
+    setShowChat(!showChat);
+  };
+
+  const handleChatClose = () => {
+    setShowChat(false);
   };
 
   return (
-    <div className="container bootstrap snippets bootdey">
-      <div className="row">
-        <div className="col-md-4 col-md-offset-4">
-          <div className="portlet portlet-default">
-            <div className="portlet-heading">
-              <div className="portlet-title">
-                <h4><FontAwesomeIcon icon={faCircle} className="text-green" /> Jane Smith</h4>
-              </div>
-              <div className="portlet-widgets">
-                <div className="btn-group">
-                  <button type="button" className="btn btn-white dropdown-toggle btn-xs" data-toggle="dropdown">
-                    <FontAwesomeIcon icon={faCircle} className="text-green" /> Status
-                    <span className="caret"></span>
-                  </button>
-                  <ul className="dropdown-menu" role="menu">
-                    <li><a href="#"><FontAwesomeIcon icon={faCircle} className="text-green" /> Online</a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faCircle} className="text-orange" /> Away</a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faCircle} className="text-red" /> Offline</a></li>
-                  </ul>
-                </div>
-                <span className="divider"></span>
-                <Button onClick={toggleChat}><FontAwesomeIcon icon={faChevronDown} /></Button>
-              </div>
-              <div className="clearfix"></div>
-            </div>
-            <Collapse in={openChat}>
-              <div id="chat" className="panel-collapse collapse in">
-                <div className="portlet-body chat-widget" style={{ overflowY: 'auto', width: 'auto', height: '300px' }}>
-                  {/* Chat messages go here */}
-                </div>
-                <div className="portlet-footer">
-                  <form role="form">
-                    <div className="form-group">
-                      <textarea className="form-control" placeholder="Enter message..."></textarea>
-                    </div>
-                    <div className="form-group">
-                      <button type="button" className="btn btn-default pull-right">Send</button>
-                      <div className="clearfix"></div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </Collapse>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Container style={{ marginTop: '50px' }}>
+      <ThemeProvider theme={theme}>
+        {showChat && (
+          <Row style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}>
+            <Col xs={10} style={{ paddingRight: '0' }}>
+              <ChatBot
+                steps={[
+                  {
+                    id: '1',
+                    message: 'Olá! Como posso ajudá-lo?',
+                    trigger: '2',
+                  },
+                  {
+                    id: '2',
+                    user: true,
+                    trigger: '3',
+                  },
+                  {
+                    id: '3',
+                    message: 'Obrigado pela sua mensagem! Em breve, entraremos em contato.',
+                    end: true,
+                  },
+                ]}
+                headerTitle="Chat"
+                placeholder="Digite sua mensagem..."
+                userDelay={1000}
+                customDelay={1000}
+              />
+            </Col>
+            <Col xs={2} style={{ paddingLeft: '0' }}>
+              <Button onClick={handleChatClose} variant="danger" style={{ borderRadius: '0' }}>Fechar</Button>
+              {/* Adicione aqui o botão de minimizar */}
+            </Col>
+          </Row>
+        )}
+      </ThemeProvider>
+      <Button
+        onClick={handleChatToggle}
+        variant="primary"
+        style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' }}
+      >
+        {showChat ? 'Minimizar' : 'Abrir Chat'}
+      </Button>
+    </Container>
   );
-}
+};
 
 export default ChatCyberethic;

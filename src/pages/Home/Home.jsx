@@ -34,6 +34,7 @@ function Home() {
       <TimeCyberethic  />
       <ContatoCyberethic  />
       <FooterCyberethic  />
+      <ChatCyberethic/>
     </>
   );
 }
